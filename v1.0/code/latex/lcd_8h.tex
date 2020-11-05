@@ -1,0 +1,97 @@
+\hypertarget{lcd_8h}{}\doxysection{code/src/lcd.h File Reference}
+\label{lcd_8h}\index{code/src/lcd.h@{code/src/lcd.h}}
+
+
+Driver for Hitachi H\+D44780 L\+CD controller in 4-\/bit mode.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{lcd_8h_a6842775ba83d166f02b8fef8bb63b1e6}\label{lcd_8h_a6842775ba83d166f02b8fef8bb63b1e6}} 
+void \mbox{\hyperlink{lcd_8h_a6842775ba83d166f02b8fef8bb63b1e6}{lcd\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialises the L\+CD module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8h_aeec87ef9a4dc229d389baa466179ede4}{lcd\+\_\+set\+\_\+cursor}} (int column, int row)
+\begin{DoxyCompactList}\small\item\em Moves the cursor position to the specified location. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{lcd_8h_ad235a86241458b1e7b8771688bfdaf9a}\label{lcd_8h_ad235a86241458b1e7b8771688bfdaf9a}} 
+void \mbox{\hyperlink{lcd_8h_ad235a86241458b1e7b8771688bfdaf9a}{lcd\+\_\+clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clears the L\+CD and relocates the cursor to \{0,0\}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8h_aa01b0f8ce593b55afeca30e817753471}{lcd\+\_\+print}} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em Prints the null terminated string to the L\+CD and increments the cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8h_a55057a431a432d6e04635aee029ef4bf}{lcd\+\_\+put\+\_\+char}} (char c)
+\begin{DoxyCompactList}\small\item\em Prints the specified character to the L\+CD and increments the cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lcd_8h_aec593b4711b4645bba692dcc1fbe742f}{lcd\+\_\+set\+\_\+cursor\+\_\+visibile}} (int visible)
+\begin{DoxyCompactList}\small\item\em Enables or disables visibility of the cursor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver for Hitachi H\+D44780 L\+CD controller in 4-\/bit mode. 
+
+\begin{DoxyCopyright}{Copyright}
+A\+RM University Program \copyright{} A\+RM Ltd 2014.
+\end{DoxyCopyright}
+Modified for use with L\+P\+C4088 experiment bundle; Copyright 2016-\/2017 Johann A. Briffa 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lcd_8h_aa01b0f8ce593b55afeca30e817753471}\label{lcd_8h_aa01b0f8ce593b55afeca30e817753471}} 
+\index{lcd.h@{lcd.h}!lcd\_print@{lcd\_print}}
+\index{lcd\_print@{lcd\_print}!lcd.h@{lcd.h}}
+\doxysubsubsection{\texorpdfstring{lcd\_print()}{lcd\_print()}}
+{\footnotesize\ttfamily void lcd\+\_\+print (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+
+
+Prints the null terminated string to the L\+CD and increments the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Null terminated string to be printed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd_8h_a55057a431a432d6e04635aee029ef4bf}\label{lcd_8h_a55057a431a432d6e04635aee029ef4bf}} 
+\index{lcd.h@{lcd.h}!lcd\_put\_char@{lcd\_put\_char}}
+\index{lcd\_put\_char@{lcd\_put\_char}!lcd.h@{lcd.h}}
+\doxysubsubsection{\texorpdfstring{lcd\_put\_char()}{lcd\_put\_char()}}
+{\footnotesize\ttfamily void lcd\+\_\+put\+\_\+char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Prints the specified character to the L\+CD and increments the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Character to be printed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd_8h_aeec87ef9a4dc229d389baa466179ede4}\label{lcd_8h_aeec87ef9a4dc229d389baa466179ede4}} 
+\index{lcd.h@{lcd.h}!lcd\_set\_cursor@{lcd\_set\_cursor}}
+\index{lcd\_set\_cursor@{lcd\_set\_cursor}!lcd.h@{lcd.h}}
+\doxysubsubsection{\texorpdfstring{lcd\_set\_cursor()}{lcd\_set\_cursor()}}
+{\footnotesize\ttfamily void lcd\+\_\+set\+\_\+cursor (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Moves the cursor position to the specified location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & Destination column for the cursor. \\
+\hline
+{\em row} & Destination row for the cursor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lcd_8h_aec593b4711b4645bba692dcc1fbe742f}\label{lcd_8h_aec593b4711b4645bba692dcc1fbe742f}} 
+\index{lcd.h@{lcd.h}!lcd\_set\_cursor\_visibile@{lcd\_set\_cursor\_visibile}}
+\index{lcd\_set\_cursor\_visibile@{lcd\_set\_cursor\_visibile}!lcd.h@{lcd.h}}
+\doxysubsubsection{\texorpdfstring{lcd\_set\_cursor\_visibile()}{lcd\_set\_cursor\_visibile()}}
+{\footnotesize\ttfamily void lcd\+\_\+set\+\_\+cursor\+\_\+visibile (\begin{DoxyParamCaption}\item[{int}]{visible }\end{DoxyParamCaption})}
+
+
+
+Enables or disables visibility of the cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visible} & New visibility of the cursor. \\
+\hline
+\end{DoxyParams}

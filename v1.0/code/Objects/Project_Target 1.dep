@@ -1,0 +1,52 @@
+Dependencies for Project 'Project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\src\delay.c)(0x5E5ED120)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+F (.\src\delay.h)(0x5E5ED121)()
+F (.\src\lcd.c)(0x5E5ED121)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+F (.\src\lcd.h)(0x5E5ED121)()
+F (.\src\leds.c)(0x5E5ED120)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\leds.o --omf_browse .\objects\leds.crf --depend .\objects\leds.d)
+F (.\src\leds.h)(0x5E5ED121)()
+F (.\src\main.c)(0x5E5ED120)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\src\switches.c)(0x5E5ED120)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\switches.o --omf_browse .\objects\switches.crf --depend .\objects\switches.d)
+F (.\src\switches.h)(0x5E5ED120)()
+F (.\src\TextLCD.cpp)(0x5E5ED120)(--cpp -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\textlcd.o --omf_browse .\objects\textlcd.crf --depend .\objects\textlcd.d)
+I (src\TextLCD.h)(0x5E5ED121)
+F (.\src\TextLCD.h)(0x5E5ED121)()
+F (.\drivers\adc.c)(0x5E5ED124)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+F (.\drivers\comparator.c)(0x5E5ED124)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\comparator.o --omf_browse .\objects\comparator.crf --depend .\objects\comparator.d)
+F (.\drivers\dac.c)(0x5E5ED123)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
+F (.\drivers\gpio.c)(0x5E5ED124)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (D:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include\LPC407x_8x_177x_8x.h)(0x539FF742)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25F326)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FB044)
+I (D:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include\system_LPC407x_8x_177x_8x.h)(0x5703BCCE)
+F (.\drivers\i2c.c)(0x5E5ED124)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+F (.\drivers\timer.c)(0x5E5ED122)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+F (.\drivers\uart.c)(0x5E5ED122)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+F (.\drivers\adc.h)(0x5E5ED124)()
+F (.\drivers\comparator.h)(0x5E5ED124)()
+F (.\drivers\dac.h)(0x5E5ED124)()
+F (.\drivers\dma.h)(0x5E5ED124)()
+F (.\drivers\gpio.h)(0x5E5ED124)()
+F (.\drivers\i2c.h)(0x5E5ED124)()
+F (.\drivers\i2s.h)(0x5E5ED122)()
+F (.\drivers\platform.h)(0x5E5ED124)()
+F (.\drivers\timer.h)(0x5E5ED124)()
+F (.\drivers\uart.h)(0x5E5ED124)()
+F (RTE\Device\LPC4088FET208\RTE_Device.h)(0x5E5ED120)()
+F (RTE\Device\LPC4088FET208\startup_LPC407x_8x_177x_8x.s)(0x5E5ED121)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "CORE_M4 SETA 1"--list .\listings\startup_lpc407x_8x_177x_8x.lst --xref -o .\objects\startup_lpc407x_8x_177x_8x.o --depend .\objects\startup_lpc407x_8x_177x_8x.d)
+F (RTE\Device\LPC4088FET208\system_LPC407x_8x_177x_8x.c)(0x5E5ED121)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC4088FET208-I.\RTE\_Target_1-ID:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DCORE_M4-o .\objects\system_lpc407x_8x_177x_8x.o --omf_browse .\objects\system_lpc407x_8x_177x_8x.crf --depend .\objects\system_lpc407x_8x_177x_8x.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (D:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include\LPC407x_8x_177x_8x.h)(0x539FF742)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
+I (D:\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FB044)
+I (D:\Arm\Packs\Keil\LPC4000_DFP\2.1.0\Device\Include\system_LPC407x_8x_177x_8x.h)(0x5703BCCE)
+I (RTE\Device\LPC4088FET208\system_LPC407x_8x_177x_8x.h)(0x5E5ED120)
+F (RTE\Device\LPC4088FET208\system_LPC407x_8x_177x_8x.h)(0x5E5ED120)()

@@ -1,0 +1,66 @@
+\hypertarget{class_text_l_c_d___s_p_i}{}\doxysection{Text\+L\+C\+D\+\_\+\+S\+PI Class Reference}
+\label{class_text_l_c_d___s_p_i}\index{TextLCD\_SPI@{TextLCD\_SPI}}
+
+
+{\ttfamily \#include $<$Text\+L\+C\+D.\+h$>$}
+
+Inheritance diagram for Text\+L\+C\+D\+\_\+\+S\+PI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_l_c_d___s_p_i}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_l_c_d___s_p_i_a42bc53cb8f60e05806535e438280029c}{Text\+L\+C\+D\+\_\+\+S\+PI}} (Pin ser, Pin sck, Pin rck, \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}} type=\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}{L\+C\+D16x2}}, \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}} ctrl=\mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}{H\+D44780}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Create a Text\+L\+CD interface using an S\+PI 74595 portexpander 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_l_c_d___s_p_i_a42bc53cb8f60e05806535e438280029c}\label{class_text_l_c_d___s_p_i_a42bc53cb8f60e05806535e438280029c}} 
+\index{TextLCD\_SPI@{TextLCD\_SPI}!TextLCD\_SPI@{TextLCD\_SPI}}
+\index{TextLCD\_SPI@{TextLCD\_SPI}!TextLCD\_SPI@{TextLCD\_SPI}}
+\doxysubsubsection{\texorpdfstring{TextLCD\_SPI()}{TextLCD\_SPI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_l_c_d___s_p_i}{Text\+L\+C\+D\+\_\+\+S\+PI}} (\begin{DoxyParamCaption}\item[{Pin}]{ser,  }\item[{Pin}]{sck,  }\item[{Pin}]{rck,  }\item[{\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}{L\+C\+D16x2}}},  }\item[{\mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}}}]{ctrl = {\ttfamily \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}{H\+D44780}}} }\end{DoxyParamCaption})}
+
+Create a Text\+L\+CD interface using an S\+PI 74595 portexpander
+
+
+\begin{DoxyParams}{Parameters}
+{\em ser} & serial data in pin \\
+\hline
+{\em sck} & serial in clock pin (positive edge) \\
+\hline
+{\em rck} & parallel out clock pin (positive edge) \\
+\hline
+{\em ser} & serial data in pin \\
+\hline
+{\em type} & Sets the panel size/addressing mode (default = L\+C\+D16x2) \\
+\hline
+{\em ctrl} & L\+CD controller (default = H\+D44780)\\
+\hline
+\end{DoxyParams}
+Create a Text\+L\+CD interface using an S\+PI 74595 portexpander
+
+
+\begin{DoxyParams}{Parameters}
+{\em spi} & S\+PI Bus \\
+\hline
+{\em cs} & chip select pin (active low) \\
+\hline
+{\em type} & Sets the panel size/addressing mode (default = L\+C\+D16x2) \\
+\hline
+{\em ctrl} & L\+CD controller (default = H\+D44780) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/src/Text\+L\+C\+D.\+h\item 
+code/src/Text\+L\+C\+D.\+cpp\end{DoxyCompactItemize}

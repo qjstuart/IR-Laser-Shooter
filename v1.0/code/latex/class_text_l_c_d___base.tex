@@ -1,0 +1,461 @@
+\hypertarget{class_text_l_c_d___base}{}\doxysection{Text\+L\+C\+D\+\_\+\+Base Class Reference}
+\label{class_text_l_c_d___base}\index{TextLCD\_Base@{TextLCD\_Base}}
+
+
+Currently supports 8x1, 8x2, 12x2, 12x3, 12x4, 16x1, 16x2, 16x3, 16x4, 20x2, 20x4, 24x2, 24x4, 40x2 and 40x4 panels Interface options include direct mbed pins, I2C portexpander (P\+C\+F8474/\+P\+C\+F8574A or M\+C\+P23008) or S\+PI bus shiftregister (74595) and some native I2C or S\+PI devices.  
+
+
+
+
+{\ttfamily \#include $<$Text\+L\+C\+D.\+h$>$}
+
+Inheritance diagram for Text\+L\+C\+D\+\_\+\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_text_l_c_d___base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}} \{ \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}{L\+C\+D16x2}} = (L\+C\+D\+\_\+\+T\+\_\+\+C16 $\vert$ L\+C\+D\+\_\+\+T\+\_\+\+R2), 
+\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ac00b1a2bf63020fcc7fa981d46c8f1fe}{L\+C\+D20x4}} = (L\+C\+D\+\_\+\+T\+\_\+\+C20 $\vert$ L\+C\+D\+\_\+\+T\+\_\+\+R4)
+ \}
+\item 
+enum \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}} \{ \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}{H\+D44780}} = 0 $\vert$ L\+C\+D\+\_\+\+C\+\_\+\+P\+AR
+ \}
+\item 
+enum \mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}} \{ \mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaa469c45b2281c071305eef8ade6dfd36}{Cur\+Off\+\_\+\+Blk\+Off}} = 0x00, 
+\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaf9ab84c02c915f885849493dd2d26a90}{Cur\+On\+\_\+\+Blk\+Off}} = 0x02, 
+\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda51ae3e5743c85df7aaee78900162fc14}{Cur\+Off\+\_\+\+Blk\+On}} = 0x01, 
+\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda9f94964880ab0d01fae27e768acaa442}{Cur\+On\+\_\+\+Blk\+On}} = 0x03
+ \}
+\item 
+enum \mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}} \{ \mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a798b7b4860adcd76a737102d5accdb83}{Disp\+Off}} = 0x00, 
+\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a7b8973e182fd6ad6d64d6e2108273597}{Disp\+On}} = 0x04
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_ab2682874a0ea4865b2bfe6ac2599a301}{putc}} (int c)
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_ae59021ed7b418bb17a0cc2feda3dc46c}{printf}} (const char $\ast$text,...)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_ad9d5ba057f6bf49a0f5a2961ba31bb92}{locate}} (int column, int row)
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_af90dd0209480f412db4876a9a6a10718}{get\+Address}} (int column, int row)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a6b7b181784639870bc21a19d39f5ffe4}{set\+Address}} (int column, int row)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a4826277cc150ddc0f4de4bd464a34909}{cls}} ()
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_a8db75abaedab913d9c6a593539fbbd3e}{rows}} ()
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_ad4cdcc318ab507a52ca2a7f69b2c4d55}{columns}} ()
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a56620c8e02e449847ebdcbc4f7205092}{set\+Cursor}} (\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}} cursor\+Mode)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a8e6d2bb5f9caf89939ecb20a72e7a93b}{set\+Mode}} (\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}} display\+Mode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_l_c_d___base_adf96bd3bae48baf3ebe2cd6fdfc2020e}{Text\+L\+C\+D\+\_\+\+Base}} (\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}} type=\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}{L\+C\+D16x2}}, \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}} ctrl=\mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}{H\+D44780}})
+\begin{DoxyCompactList}\small\item\em Base class, can not be instantiated. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_text_l_c_d___base_ae24b61aa4859e944c84132aab5acfc5e}{\+\_\+putc}} (int value)
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_a33401fa563af1b7e65529eb63f781830}\label{class_text_l_c_d___base_a33401fa563af1b7e65529eb63f781830}} 
+virtual int {\bfseries \+\_\+getc} ()
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a53578094a6e7647b6a9f9ea86975c4c2}{\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_abd99fbd40d983681fb0c5934ea8524b1}{\+\_\+init\+Ctrl}} ()
+\item 
+int \mbox{\hyperlink{class_text_l_c_d___base_acfa1515228ce561d049bcf93043ea5d1}{\+\_\+address}} (int column, int row)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_acd845b82f2fe608fef34c8efdd696c4e}{\+\_\+set\+Cursor}} (\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}} show)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a5f035d7de4bd519ce953b65d3a8bb307}{\+\_\+set\+Cursor\+And\+Display\+Mode}} (\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}} display\+Mode, \mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}} cursor\+Type)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a006be0ff2e2b223f753aa4cd56656919}{\+\_\+write\+Nibble}} (int value)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_af6845ece20703f7c2d22a1053f342912}{\+\_\+write\+Command}} (int command)
+\item 
+void \mbox{\hyperlink{class_text_l_c_d___base_a8bcc6821e08f0059725d06c5178cd321}{\+\_\+write\+Data}} (int data)
+\item 
+virtual void \mbox{\hyperlink{class_text_l_c_d___base_af09a3c9a51a67972ef0217a380d03d3e}{\+\_\+set\+Enable}} (bool value)=0
+\item 
+virtual void \mbox{\hyperlink{class_text_l_c_d___base_abea88014a351ebbb8b9e0cd5fa7c8f41}{\+\_\+set\+RS}} (bool value)=0
+\item 
+virtual void \mbox{\hyperlink{class_text_l_c_d___base_a410eb30e22ac1311c28fd03aad46632c}{\+\_\+set\+Data}} (int value)=0
+\item 
+virtual void \mbox{\hyperlink{class_text_l_c_d___base_a0856133706f2fbb450d74bfb087e4031}{\+\_\+write\+Byte}} (int value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_ad27b9368bbb66ec82ed30ab6c3be5470}\label{class_text_l_c_d___base_ad27b9368bbb66ec82ed30ab6c3be5470}} 
+\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}} {\bfseries \+\_\+type}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_ab4b28a415079e6775891bd61fded9698}\label{class_text_l_c_d___base_ab4b28a415079e6775891bd61fded9698}} 
+int {\bfseries \+\_\+nr\+\_\+cols}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_adbaa05dbebf86f7bc6593d7147aadbcf}\label{class_text_l_c_d___base_adbaa05dbebf86f7bc6593d7147aadbcf}} 
+int {\bfseries \+\_\+nr\+\_\+rows}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_a267efcc1bd42ce3b26eecdc31c35166a}\label{class_text_l_c_d___base_a267efcc1bd42ce3b26eecdc31c35166a}} 
+\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}} {\bfseries \+\_\+current\+Mode}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_a98b82cdef56f0f6fa061a35d10ec37b6}\label{class_text_l_c_d___base_a98b82cdef56f0f6fa061a35d10ec37b6}} 
+\mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}} {\bfseries \+\_\+ctrl}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_ae38fa930356b6fbd2980aacb2b3debc0}\label{class_text_l_c_d___base_ae38fa930356b6fbd2980aacb2b3debc0}} 
+int {\bfseries \+\_\+column}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_a2c788815cbc67c3734ad77878c81dda8}\label{class_text_l_c_d___base_a2c788815cbc67c3734ad77878c81dda8}} 
+int {\bfseries \+\_\+row}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_a2284ad0197b0674874b9572dccd62e6a}\label{class_text_l_c_d___base_a2284ad0197b0674874b9572dccd62e6a}} 
+\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}} {\bfseries \+\_\+current\+Cursor}
+\item 
+\mbox{\Hypertarget{class_text_l_c_d___base_ad1cc49ffca6daaa7342e64b367443003}\label{class_text_l_c_d___base_ad1cc49ffca6daaa7342e64b367443003}} 
+int {\bfseries \+\_\+function}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Currently supports 8x1, 8x2, 12x2, 12x3, 12x4, 16x1, 16x2, 16x3, 16x4, 20x2, 20x4, 24x2, 24x4, 40x2 and 40x4 panels Interface options include direct mbed pins, I2C portexpander (P\+C\+F8474/\+P\+C\+F8574A or M\+C\+P23008) or S\+PI bus shiftregister (74595) and some native I2C or S\+PI devices. 
+
+A Text\+L\+CD interface for driving 4-\/bit H\+D44780-\/based L\+C\+Ds 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}\label{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!LCDCtrl@{LCDCtrl}}
+\index{LCDCtrl@{LCDCtrl}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{LCDCtrl}{LCDCtrl}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}}}
+
+L\+CD Controller Device \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HD44780@{HD44780}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!HD44780@{HD44780}}}\mbox{\Hypertarget{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}\label{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}} 
+H\+D44780&H\+D44780 or full equivalent (default) ~\newline
+ \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}\label{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!LCDCursor@{LCDCursor}}
+\index{LCDCursor@{LCDCursor}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{LCDCursor}{LCDCursor}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}}}
+
+L\+CD Cursor control \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurOff\_BlkOff@{CurOff\_BlkOff}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!CurOff\_BlkOff@{CurOff\_BlkOff}}}\mbox{\Hypertarget{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaa469c45b2281c071305eef8ade6dfd36}\label{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaa469c45b2281c071305eef8ade6dfd36}} 
+Cur\+Off\+\_\+\+Blk\+Off&Cursor Off, Blinking Char Off \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurOn\_BlkOff@{CurOn\_BlkOff}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!CurOn\_BlkOff@{CurOn\_BlkOff}}}\mbox{\Hypertarget{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaf9ab84c02c915f885849493dd2d26a90}\label{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfdaf9ab84c02c915f885849493dd2d26a90}} 
+Cur\+On\+\_\+\+Blk\+Off&Cursor On, Blinking Char Off \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurOff\_BlkOn@{CurOff\_BlkOn}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!CurOff\_BlkOn@{CurOff\_BlkOn}}}\mbox{\Hypertarget{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda51ae3e5743c85df7aaee78900162fc14}\label{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda51ae3e5743c85df7aaee78900162fc14}} 
+Cur\+Off\+\_\+\+Blk\+On&Cursor Off, Blinking Char On \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurOn\_BlkOn@{CurOn\_BlkOn}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!CurOn\_BlkOn@{CurOn\_BlkOn}}}\mbox{\Hypertarget{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda9f94964880ab0d01fae27e768acaa442}\label{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfda9f94964880ab0d01fae27e768acaa442}} 
+Cur\+On\+\_\+\+Blk\+On&Cursor On, Blinking Char On \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}\label{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!LCDMode@{LCDMode}}
+\index{LCDMode@{LCDMode}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{LCDMode}{LCDMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}}}
+
+L\+CD Display control \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DispOff@{DispOff}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!DispOff@{DispOff}}}\mbox{\Hypertarget{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a798b7b4860adcd76a737102d5accdb83}\label{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a798b7b4860adcd76a737102d5accdb83}} 
+Disp\+Off&Display Off \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DispOn@{DispOn}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!DispOn@{DispOn}}}\mbox{\Hypertarget{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a7b8973e182fd6ad6d64d6e2108273597}\label{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7a7b8973e182fd6ad6d64d6e2108273597}} 
+Disp\+On&Display On \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}\label{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!LCDType@{LCDType}}
+\index{LCDType@{LCDType}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{LCDType}{LCDType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}}}
+
+L\+CD panel format \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD16x2@{LCD16x2}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!LCD16x2@{LCD16x2}}}\mbox{\Hypertarget{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}\label{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}} 
+L\+C\+D16x2&16x2 L\+CD panel (default) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LCD20x4@{LCD20x4}!TextLCD\_Base@{TextLCD\_Base}}\index{TextLCD\_Base@{TextLCD\_Base}!LCD20x4@{LCD20x4}}}\mbox{\Hypertarget{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ac00b1a2bf63020fcc7fa981d46c8f1fe}\label{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ac00b1a2bf63020fcc7fa981d46c8f1fe}} 
+L\+C\+D20x4&20x4 L\+CD panel \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text_l_c_d___base_adf96bd3bae48baf3ebe2cd6fdfc2020e}\label{class_text_l_c_d___base_adf96bd3bae48baf3ebe2cd6fdfc2020e}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!TextLCD\_Base@{TextLCD\_Base}}
+\index{TextLCD\_Base@{TextLCD\_Base}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{TextLCD\_Base()}{TextLCD\_Base()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_l_c_d___base}{Text\+L\+C\+D\+\_\+\+Base}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246}{L\+C\+D\+Type}}}]{type = {\ttfamily \mbox{\hyperlink{class_text_l_c_d___base_a34308ad4863545ea062d94247d840246ae7bcecef91ac5da0b68b943d37d0a9c0}{L\+C\+D16x2}}},  }\item[{\mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7c}{L\+C\+D\+Ctrl}}}]{ctrl = {\ttfamily \mbox{\hyperlink{class_text_l_c_d___base_a86efd373f98adf777253a3b2b4430c7ca395cf661294ce63888a3fff71f986487}{H\+D44780}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Base class, can not be instantiated. 
+
+Create a \mbox{\hyperlink{class_text_l_c_d___base}{Text\+L\+C\+D\+\_\+\+Base}} interface 
+\begin{DoxyParams}{Parameters}
+{\em type} & Sets the panel size/addressing mode (default = L\+C\+D16x2) \\
+\hline
+{\em ctrl} & L\+CD controller (default = H\+D44780) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text_l_c_d___base_acfa1515228ce561d049bcf93043ea5d1}\label{class_text_l_c_d___base_acfa1515228ce561d049bcf93043ea5d1}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_address@{\_address}}
+\index{\_address@{\_address}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_address()}{\_address()}}
+{\footnotesize\ttfamily int \+\_\+address (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level character address set method \mbox{\Hypertarget{class_text_l_c_d___base_a53578094a6e7647b6a9f9ea86975c4c2}\label{class_text_l_c_d___base_a53578094a6e7647b6a9f9ea86975c4c2}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_init@{\_init}}
+\index{\_init@{\_init}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_init()}{\_init()}}
+{\footnotesize\ttfamily void \+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level method for L\+CD controller
+
+Init the L\+CD Controller(s) Clear display \mbox{\Hypertarget{class_text_l_c_d___base_abd99fbd40d983681fb0c5934ea8524b1}\label{class_text_l_c_d___base_abd99fbd40d983681fb0c5934ea8524b1}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_initCtrl@{\_initCtrl}}
+\index{\_initCtrl@{\_initCtrl}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_initCtrl()}{\_initCtrl()}}
+{\footnotesize\ttfamily void \+\_\+init\+Ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level initialisation method for L\+CD controller
+
+Init the L\+CD controller 4-\/bit mode, number of lines, fonttype, no cursor etc
+
+Note\+: some configurations are commented out because they have not yet been tested due to lack of hardware \mbox{\Hypertarget{class_text_l_c_d___base_ae24b61aa4859e944c84132aab5acfc5e}\label{class_text_l_c_d___base_ae24b61aa4859e944c84132aab5acfc5e}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_putc@{\_putc}}
+\index{\_putc@{\_putc}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_putc()}{\_putc()}}
+{\footnotesize\ttfamily int \+\_\+putc (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Write a single character (Stream implementation) \mbox{\Hypertarget{class_text_l_c_d___base_acd845b82f2fe608fef34c8efdd696c4e}\label{class_text_l_c_d___base_acd845b82f2fe608fef34c8efdd696c4e}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_setCursor@{\_setCursor}}
+\index{\_setCursor@{\_setCursor}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_setCursor()}{\_setCursor()}}
+{\footnotesize\ttfamily void \+\_\+set\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}}}]{show }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level cursor enable or disable method \mbox{\Hypertarget{class_text_l_c_d___base_a5f035d7de4bd519ce953b65d3a8bb307}\label{class_text_l_c_d___base_a5f035d7de4bd519ce953b65d3a8bb307}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_setCursorAndDisplayMode@{\_setCursorAndDisplayMode}}
+\index{\_setCursorAndDisplayMode@{\_setCursorAndDisplayMode}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_setCursorAndDisplayMode()}{\_setCursorAndDisplayMode()}}
+{\footnotesize\ttfamily void \+\_\+set\+Cursor\+And\+Display\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}}}]{display\+Mode,  }\item[{\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}}}]{cursor\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level method to restore the cursortype and display mode for current controller \mbox{\Hypertarget{class_text_l_c_d___base_a410eb30e22ac1311c28fd03aad46632c}\label{class_text_l_c_d___base_a410eb30e22ac1311c28fd03aad46632c}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_setData@{\_setData}}
+\index{\_setData@{\_setData}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_setData()}{\_setData()}}
+{\footnotesize\ttfamily virtual void \+\_\+set\+Data (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Pure Virtual Low level writes to L\+CD Bus (serial or parallel) Set the databus value (4 bit). \mbox{\Hypertarget{class_text_l_c_d___base_af09a3c9a51a67972ef0217a380d03d3e}\label{class_text_l_c_d___base_af09a3c9a51a67972ef0217a380d03d3e}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_setEnable@{\_setEnable}}
+\index{\_setEnable@{\_setEnable}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_setEnable()}{\_setEnable()}}
+{\footnotesize\ttfamily virtual void \+\_\+set\+Enable (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Pure Virtual Low level writes to L\+CD Bus (serial or parallel) Set the Enable pin. \mbox{\Hypertarget{class_text_l_c_d___base_abea88014a351ebbb8b9e0cd5fa7c8f41}\label{class_text_l_c_d___base_abea88014a351ebbb8b9e0cd5fa7c8f41}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_setRS@{\_setRS}}
+\index{\_setRS@{\_setRS}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_setRS()}{\_setRS()}}
+{\footnotesize\ttfamily virtual void \+\_\+set\+RS (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Pure Virtual Low level writes to L\+CD Bus (serial or parallel) Set the RS pin ( 0 = Command, 1 = Data). \mbox{\Hypertarget{class_text_l_c_d___base_a0856133706f2fbb450d74bfb087e4031}\label{class_text_l_c_d___base_a0856133706f2fbb450d74bfb087e4031}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_writeByte@{\_writeByte}}
+\index{\_writeByte@{\_writeByte}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_writeByte()}{\_writeByte()}}
+{\footnotesize\ttfamily void \+\_\+write\+Byte (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Low level byte write operation to L\+CD controller (serial or parallel) Depending on the RS pin this byte will be interpreted as data or command \mbox{\Hypertarget{class_text_l_c_d___base_af6845ece20703f7c2d22a1053f342912}\label{class_text_l_c_d___base_af6845ece20703f7c2d22a1053f342912}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_writeCommand@{\_writeCommand}}
+\index{\_writeCommand@{\_writeCommand}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_writeCommand()}{\_writeCommand()}}
+{\footnotesize\ttfamily void \+\_\+write\+Command (\begin{DoxyParamCaption}\item[{int}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level command byte write operation to L\+CD controller. Methods resets the RS bit and provides the required timing for the command. \mbox{\Hypertarget{class_text_l_c_d___base_a8bcc6821e08f0059725d06c5178cd321}\label{class_text_l_c_d___base_a8bcc6821e08f0059725d06c5178cd321}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_writeData@{\_writeData}}
+\index{\_writeData@{\_writeData}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_writeData()}{\_writeData()}}
+{\footnotesize\ttfamily void \+\_\+write\+Data (\begin{DoxyParamCaption}\item[{int}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level data byte write operation to L\+CD controller (serial or parallel). Methods sets the RS bit and provides the required timing for the data. \mbox{\Hypertarget{class_text_l_c_d___base_a006be0ff2e2b223f753aa4cd56656919}\label{class_text_l_c_d___base_a006be0ff2e2b223f753aa4cd56656919}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!\_writeNibble@{\_writeNibble}}
+\index{\_writeNibble@{\_writeNibble}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{\_writeNibble()}{\_writeNibble()}}
+{\footnotesize\ttfamily void \+\_\+write\+Nibble (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Low level nibble write operation to L\+CD controller (serial or parallel) \mbox{\Hypertarget{class_text_l_c_d___base_a4826277cc150ddc0f4de4bd464a34909}\label{class_text_l_c_d___base_a4826277cc150ddc0f4de4bd464a34909}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!cls@{cls}}
+\index{cls@{cls}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{cls()}{cls()}}
+{\footnotesize\ttfamily void cls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the screen and locate to 0,0
+
+Clear the screen, Cursor home. \mbox{\Hypertarget{class_text_l_c_d___base_ad4cdcc318ab507a52ca2a7f69b2c4d55}\label{class_text_l_c_d___base_ad4cdcc318ab507a52ca2a7f69b2c4d55}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!columns@{columns}}
+\index{columns@{columns}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{columns()}{columns()}}
+{\footnotesize\ttfamily int columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of columns
+
+
+\begin{DoxyParams}{Parameters}
+{\em return} & The number of columns\\
+\hline
+\end{DoxyParams}
+Return the number of columns
+
+
+\begin{DoxyParams}{Parameters}
+{\em return} & The number of columns\\
+\hline
+\end{DoxyParams}
+Note\+: some configurations are commented out because they have not yet been tested due to lack of hardware \mbox{\Hypertarget{class_text_l_c_d___base_af90dd0209480f412db4876a9a6a10718}\label{class_text_l_c_d___base_af90dd0209480f412db4876a9a6a10718}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily int get\+Address (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Return the memoryaddress of screen column and row location
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The horizontal position from the left, indexed from 0 \\
+\hline
+{\em row} & The vertical position from the top, indexed from 0 \\
+\hline
+{\em return} & The memoryaddress of screen column and row location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_ad9d5ba057f6bf49a0f5a2961ba31bb92}\label{class_text_l_c_d___base_ad9d5ba057f6bf49a0f5a2961ba31bb92}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!locate@{locate}}
+\index{locate@{locate}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{locate()}{locate()}}
+{\footnotesize\ttfamily void locate (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Locate cursor to a screen column and row
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The horizontal position from the left, indexed from 0 \\
+\hline
+{\em row} & The vertical position from the top, indexed from 0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_ae59021ed7b418bb17a0cc2feda3dc46c}\label{class_text_l_c_d___base_ae59021ed7b418bb17a0cc2feda3dc46c}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!printf@{printf}}
+\index{printf@{printf}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{printf()}{printf()}}
+{\footnotesize\ttfamily int printf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Write a raw string to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & text, may be followed by variables to emulate formatting the string. However, printf formatting is N\+OT supported and variables will be ignored! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_ab2682874a0ea4865b2bfe6ac2599a301}\label{class_text_l_c_d___base_ab2682874a0ea4865b2bfe6ac2599a301}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!putc@{putc}}
+\index{putc@{putc}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{putc()}{putc()}}
+{\footnotesize\ttfamily int putc (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+Write a character to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character to write to the display \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_a8db75abaedab913d9c6a593539fbbd3e}\label{class_text_l_c_d___base_a8db75abaedab913d9c6a593539fbbd3e}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!rows@{rows}}
+\index{rows@{rows}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily int rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em return} & The number of rows\\
+\hline
+\end{DoxyParams}
+Return the number of rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em return} & The number of rows\\
+\hline
+\end{DoxyParams}
+Note\+: some configurations are commented out because they have not yet been tested due to lack of hardware \mbox{\Hypertarget{class_text_l_c_d___base_a6b7b181784639870bc21a19d39f5ffe4}\label{class_text_l_c_d___base_a6b7b181784639870bc21a19d39f5ffe4}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!setAddress@{setAddress}}
+\index{setAddress@{setAddress}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{setAddress()}{setAddress()}}
+{\footnotesize\ttfamily void set\+Address (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Set the memoryaddress of screen column and row location
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The horizontal position from the left, indexed from 0 \\
+\hline
+{\em row} & The vertical position from the top, indexed from 0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_a56620c8e02e449847ebdcbc4f7205092}\label{class_text_l_c_d___base_a56620c8e02e449847ebdcbc4f7205092}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!setCursor@{setCursor}}
+\index{setCursor@{setCursor}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{setCursor()}{setCursor()}}
+{\footnotesize\ttfamily void set\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text_l_c_d___base_a118cc6b62386c751dc09a79a5e031dfd}{L\+C\+D\+Cursor}}}]{cursor\+Mode }\end{DoxyParamCaption})}
+
+Set the Cursormode
+
+
+\begin{DoxyParams}{Parameters}
+{\em cursor\+Mode} & The Cursor mode (Cur\+Off\+\_\+\+Blk\+Off, Cur\+On\+\_\+\+Blk\+Off, Cur\+Off\+\_\+\+Blk\+On, Cur\+On\+\_\+\+Blk\+On) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text_l_c_d___base_a8e6d2bb5f9caf89939ecb20a72e7a93b}\label{class_text_l_c_d___base_a8e6d2bb5f9caf89939ecb20a72e7a93b}} 
+\index{TextLCD\_Base@{TextLCD\_Base}!setMode@{setMode}}
+\index{setMode@{setMode}!TextLCD\_Base@{TextLCD\_Base}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily void set\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text_l_c_d___base_a4ce8f01d902d595ef9aafbda31397ff7}{L\+C\+D\+Mode}}}]{display\+Mode }\end{DoxyParamCaption})}
+
+Set the Displaymode
+
+
+\begin{DoxyParams}{Parameters}
+{\em display\+Mode} & The Display mode (Disp\+Off, Disp\+On) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/src/Text\+L\+C\+D.\+h\item 
+code/src/Text\+L\+C\+D.\+cpp\end{DoxyCompactItemize}
