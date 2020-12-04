@@ -1,6 +1,6 @@
 # irLaserShooter
 
-This project uses an ARM Cortex-M4 microcontroller to implement a an entertaining point-and-shoot arcade game with with real-world applicability. The system relies on infrared communications between a gun (transmitter) and randomly moving targets (receivers).
+This project uses an ARM Cortex-M4 microcontroller to implement a an entertaining point-and-shoot arcade game with with real-world applicability. The system relies on infrared communications between a gun (transmitter) and randomly appearing targets (receivers).
 
 ![artifact gif](https://github.com/qjstuart/IR-Laser-Shooter/blob/main/artifact.png?raw=true)
 
