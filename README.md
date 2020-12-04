@@ -7,7 +7,7 @@ This project uses an ARM Cortex-M4 microcontroller to implement a an entertainin
 # Game Modes
 
 - **Training**: Time trial with 20 targets. High scores are written to persistent memory.
-- **Duel**: Players take turns to hit as many targets as possible out of 10. <br>
+- **2 Player (Duel)**: Players take turns to hit as many targets as possible out of 10. <br>
 
 ![artifact gif](https://github.com/qjstuart/IR-Laser-Shooter/blob/main/artifact.gif?raw=true)
 
